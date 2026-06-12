@@ -2,7 +2,8 @@
 
 A custom integration that pulls live status from your Nespresso smart
 machine via the official cloud API (`nespresso.com/ecapi`) — the same
-backend used by the Nespresso app. No local hub, no Bluetooth.
+backend used by the Nespresso app. 
+No local hub, no Bluetooth.
 
 > ⚠️ **Unofficial project.** Not affiliated with, endorsed by, or
 > supported by Nespresso/Nestlé. The API is undocumented and
