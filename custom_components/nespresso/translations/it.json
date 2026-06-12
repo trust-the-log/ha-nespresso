@@ -3,22 +3,22 @@
     "step": {
       "user": {
         "title": "Connect Nespresso",
-        "description": "**How to get the tokens:**\n\n1. Open Chrome and go to [nespresso.com/it/it/login](https://www.nespresso.com/it/it/login)\n2. Open DevTools with **F12** → go to the **Network** tab\n3. Log in with your Nespresso account\n4. In the Network list, click on the **login** request (POST)\n5. Open the **Headers** tab\n6. Scroll down to **Response Headers** → find the **Set-Cookie** entries\n7. Copy the value of **access-token=...** (long JWT string)\n8. Copy the value of **refresh-token=...** (short UUID like `xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx`)\n9. Paste both below",
+        "description": "Come ottenere i token:\n\n1. Vai sul sito Nespresso ed effettua il login\n2. Apri DevTools con F12 -> vai alla scheda Network\n3. Effettua il login con il tuo account Nespresso\n4. Nella lista Network, clicca sulla richiesta login (POST)\n5. Apri la scheda Headers\n6. Scorri fino a Response Headers -> trova le voci Set-Cookie\n7. Copia il valore di access-token=... (lunga stringa JWT)\n8. Copia il valore di refresh-token=... (breve UUID tipo xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx)\n9. Incolla entrambi qui sotto",
         "data": {
           "access_token": "Access Token",
-          "refresh_token": "Refresh Token (recommended — enables auto-renewal)",
-          "market": "Country"
+          "refresh_token": "Refresh Token (consigliato - abilita il rinnovo automatico)",
+          "market": "Paese"
         }
       }
     },
     "error": {
-      "invalid_token": "Invalid or expired token. Re-copy the cookies from the login request.",
-      "cannot_connect": "Cannot connect to Nespresso.",
-      "no_machines": "No smart machines found on this account.",
-      "unknown": "Unknown error."
+      "invalid_token": "Token non valido o scaduto. Ricopia i cookie dalla richiesta di login.",
+      "cannot_connect": "Impossibile connettersi a Nespresso.",
+      "no_machines": "Nessuna macchina smart trovata su questo account.",
+      "unknown": "Errore sconosciuto."
     },
     "abort": {
-      "already_configured": "Nespresso account already configured."
+      "already_configured": "Account Nespresso già configurato."
     }
   },
   "entity": {

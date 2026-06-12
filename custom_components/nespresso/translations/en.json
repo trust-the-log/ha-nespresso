@@ -3,10 +3,10 @@
     "step": {
       "user": {
         "title": "Connect Nespresso",
-        "description": "**How to get the tokens:**\n\n1. Open Chrome and go to [nespresso.com/login](https://www.nespresso.com/login)\n2. Open DevTools with **F12** → go to the **Network** tab\n3. Log in with your Nespresso account\n4. In the Network list, click on the **login** request (POST)\n5. Open the **Headers** tab\n6. Scroll down to **Response Headers** → find the **Set-Cookie** entries\n7. Copy the value of **access-token=...** (long JWT string)\n8. Copy the value of **refresh-token=...** (short UUID like `xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx`)\n9. Paste both below",
+        "description": "How to get the tokens:\n\n1. Go to the Nespresso website and log in\n2. Open DevTools with F12 -> go to the Network tab\n3. Log in with your Nespresso account\n4. In the Network list, click on the login request (POST)\n5. Open the Headers tab\n6. Scroll down to Response Headers -> find the Set-Cookie entries\n7. Copy the value of access-token=... (long JWT string)\n8. Copy the value of refresh-token=... (short UUID like xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx)\n9. Paste both below",
         "data": {
           "access_token": "Access Token",
-          "refresh_token": "Refresh Token (recommended — enables auto-renewal)",
+          "refresh_token": "Refresh Token (recommended - enables auto-renewal)",
           "market": "Country"
         }
       }
