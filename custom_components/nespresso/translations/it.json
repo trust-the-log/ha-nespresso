@@ -1,0 +1,40 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Connect Nespresso",
+        "description": "**How to get the tokens:**\n\n1. Open Chrome and go to [nespresso.com/it/it/login](https://www.nespresso.com/it/it/login)\n2. Open DevTools with **F12** → go to the **Network** tab\n3. Log in with your Nespresso account\n4. In the Network list, click on the **login** request (POST)\n5. Open the **Headers** tab\n6. Scroll down to **Response Headers** → find the **Set-Cookie** entries\n7. Copy the value of **access-token=...** (long JWT string)\n8. Copy the value of **refresh-token=...** (short UUID like `xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx`)\n9. Paste both below",
+        "data": {
+          "access_token": "Access Token",
+          "refresh_token": "Refresh Token (recommended — enables auto-renewal)",
+          "market": "Country"
+        }
+      }
+    },
+    "error": {
+      "invalid_token": "Invalid or expired token. Re-copy the cookies from the login request.",
+      "cannot_connect": "Cannot connect to Nespresso.",
+      "no_machines": "No smart machines found on this account.",
+      "unknown": "Unknown error."
+    },
+    "abort": {
+      "already_configured": "Nespresso account already configured."
+    }
+  },
+  "entity": {
+    "sensor": {
+      "machine_status": {"name": "Stato"},
+      "error_code": {"name": "Codice errore"},
+      "water_hardness": {"name": "Durezza acqua"},
+      "last_coffee": {"name": "Ultimo caffè"},
+      "firmware_main": {"name": "Firmware principale"},
+      "firmware_connectivity": {"name": "Firmware connettività"},
+      "last_update": {"name": "Ultimo aggiornamento"}
+    },
+    "binary_sensor": {
+      "connected": {"name": "Connessione"},
+      "descaling_alert": {"name": "Decalcificazione necessaria"},
+      "error": {"name": "Errore"}
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Connect Nespresso",
+        "description": "Enter the tokens from the browser login request.",
+        "data": {
+          "access_token": "Access Token",
+          "refresh_token": "Refresh Token (recommended)",
+          "market": "Country"
+        }
+      }
+    },
+    "error": {
+      "invalid_token": "Invalid or expired token.",
+      "cannot_connect": "Cannot connect to Nespresso.",
+      "no_machines": "No smart machines found.",
+      "unknown": "Unknown error."
+    },
+    "abort": {
+      "already_configured": "Nespresso account already configured."
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "domain": "nespresso",
+  "name": "Nespresso",
+  "codeowners": [],
+  "config_flow": true,
+  "documentation": "https://github.com/trust-the-log/ha-nespresso",
+  "integration_type": "hub",
+  "iot_class": "cloud_polling",
+  "requirements": [],
+  "version": "0.1.0"
+}
